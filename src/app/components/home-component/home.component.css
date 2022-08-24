@@ -1,0 +1,30 @@
+.container {
+  background-size: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.card {
+  width: 18%;
+  height: 25%;
+  margin: 15px;
+}
+
+.card-body {
+  padding: 13px;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 15px;
+  text-align: center;
+}
+
+.card-name {
+  font-size: 20px;
+}
+
+.btn-buy {
+  width: 30%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
