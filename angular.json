@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-httpclient-example": {
+    "ejercicio-angularfrontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-httpclient-example",
+            "outputPath": "dist/ejercicio-angularfrontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-httpclient-example:build"
+            "browserTarget": "ejercicio-angularfrontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-httpclient-example:build:production"
+              "browserTarget": "ejercicio-angularfrontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-httpclient-example:build"
+            "browserTarget": "ejercicio-angularfrontend:build"
           }
         },
         "test": {
@@ -111,16 +111,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-httpclient-example:serve"
+            "devServerTarget": "ejercicio-angularfrontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-httpclient-example:serve:production"
+              "devServerTarget": "ejercicio-angularfrontend:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-httpclient-example"
+  "defaultProject": "ejercicio-angularfrontend"
 }
