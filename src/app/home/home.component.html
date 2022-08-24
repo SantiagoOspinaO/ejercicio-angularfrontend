@@ -1,0 +1,19 @@
+<div class="app-products-div">
+  <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+
+  <mat-card *ngFor="let product of products" class="e-product-card">
+    <mat-card-header>
+      <mat-card-title>{{product.name}}</mat-card-title>
+      <mat-card-subtitle>{{product.price}} $ / {{product.quantity}} unidades</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{product.description}}
+      </p>
+      <img src="{{product.imageUrl}}" class="e-product-img"/>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button color="primary">Buy Product</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
