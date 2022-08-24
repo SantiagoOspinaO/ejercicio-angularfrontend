@@ -1,10 +1,11 @@
-<div class="container">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-lg-3 col-12" *ngFor="let product of products">
-            <div class="card-body">
+        <div class="card col-lg-3 col-12" *ngFor="let product of products">
+            <div class="card-body mb-3">
                 <h5 class="card-name">{{ product.name }}</h5>
+                <p>Price: ${{ product.price }}</p>
                 <img src="{{ product.imageUrl }}">
-                <p>${{ product.price }} / {{ product.quantity }} unidades</p>
+                <p>{{ product.quantity }} unidades</p>
                 <p>{{ product.description }}</p>
                 <button class="btn-buy" (click)="buyProduct()">Buy</button>
             </div>

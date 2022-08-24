@@ -1,11 +1,20 @@
+.container {
+  background-image:url(../../../assets/images/background.jpg);
+  background-size: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 13px;
+}
+
 .app-about-text {
   padding: 13px;
-  margin-top: 10%;
+  margin-top: 15%;
   text-align: center;
   font-family: 'Arial';
   font-size: 25px;
 }
 
 .by-autor {
+  margin-top: 5%;
   text-align: center;
 }
